@@ -15,7 +15,7 @@ Fortunately, a brute force attack isn't able to crack every password. As a (simp
 
 Ok, so what to do about the password problem? Well, read on.
 
-## Password managers
+### Password managers
 Password manager are computer programs which can store and (normally) generate passwords. That way when you need to have a new password, you just let it generate for you and then store that in the programs _password safe_. That password safe is just a file, but it is heavily encrypted so that unauthorized access is next to impossible. When generating a password you can specify various options like which characters to use, how long it should be, etc. 
 Here's a screenshot of [KeePassX](https://www.keepassx.org/)'s password generator: ![KeePassX password generator](keepassx-password-generator.png)
 
@@ -41,5 +41,5 @@ So how does this work? Each word in the [word list](diceware.wordlist.asc) has 5
 Now you need to memorize your newly created master password, since that's the key to all your (other) passwords. It is fine if you keep a piece of paper with you at first while you memorize it, but make sure you keep it in a really safe place!
 If you want an even more secure master password, you can choose to use more then 6 words. Alternatively, when you speak more then 1 language, you can also use [word lists from multiple languages](http://world.std.com/~reinhold/diceware.html#languages). In order to make that random too, roll a dice for the language selection as well. So for example you select a word from the English list when you roll an odd number and a word from the Esperanto list for an even number.
 
-For a more detailed explanation into both the problem and the solution, I recommend reading the [Diceware Passphrase Homepage](http://world.std.com/~reinhold/diceware.html) or the [excellent blog post by Agile Bits](https://blog.agilebits.com/2011/06/21/toward-better-master-passwords/), creators of 1password.  
-The obligatory and right on the mark [xkcd comic](xkcd_936_password_strength.png) [(online version](https://xkcd.com/936/))
+For a more detailed explanation into both the problem and the solution, I recommend reading the [Diceware Passphrase Homepage](http://world.std.com/~reinhold/diceware.html) or the [excellent blog post by Agile Bits](https://blog.agilebits.com/2011/06/21/toward-better-master-passwords/), creators of 1Password.  
+The obligatory and right on the mark ![xkcd comic](xkcd_936_password_strength.png) ([online version](https://xkcd.com/936/))
