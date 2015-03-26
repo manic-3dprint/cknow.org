@@ -42,4 +42,4 @@ Now you need to memorize your newly created master password, since that's the ke
 If you want an even more secure master password, you can choose to use more then 6 words. Alternatively, when you speak more then 1 language, you can also use [word lists from multiple languages](http://world.std.com/~reinhold/diceware.html#languages). In order to make that random too, roll a dice for the language selection as well. So for example you select a word from the English list when you roll an odd number and a word from the Esperanto list for an even number.
 
 For a more detailed explanation into both the problem and the solution, I recommend reading the [Diceware Passphrase Homepage](http://world.std.com/~reinhold/diceware.html) or the [excellent blog post by Agile Bits](https://blog.agilebits.com/2011/06/21/toward-better-master-passwords/), creators of 1Password.  
-The obligatory and right on the mark ![xkcd comic](xkcd_936_password_strength.png) ([online version](https://xkcd.com/936/))
+The obligatory and right on the mark xkcd comic: ![xkcd password strength comic](xkcd_936_password_strength.png) ([online version](https://xkcd.com/936/))
