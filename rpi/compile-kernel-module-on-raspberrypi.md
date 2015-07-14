@@ -18,12 +18,12 @@ How you get the firmware commit hash depends on how you got your (updated) firmw
 
 If you're using the `raspberrypi-bootloader` package (as you should), you can get the relevant git commit id with the following command:
 ```
-zgrep '* firmware as of' /usr/share/doc/raspberrypi-bootloader/changelog.Debian.gz | head -1
+$ zgrep '* firmware as of' /usr/share/doc/raspberrypi-bootloader/changelog.Debian.gz | head -1
 ```
 For the 1.20150421-1 release of `raspberrypi-bootloader` package, this would give you  
 `* firmware as of 6cc27e02dde4f1e02cfddb3d0f23d54be87680cb`  
 With that git commit id (short version is `6cc27e0`) in mind, you go to https://github.com/raspberrypi/firmware/commits/master and look up that commit id and click on the link with the title _Browse the repository at this point in the history_ and then you go into the `extra` folder.
-When you're there, you should see a file named `git_hash`. Open that file and write down the git commit id you see there.  
+When you're there, you should see a file named `git_hash`. Open that file and write down the git commit id you see there. For the earlier mentioned `raspberrypi-bootloader` package version, the git commit id is `bb6b4b6b331680bed807605685572d727638bb51` (short `bb6b4b6b33`).  
 Also download the `Module.symvers` and `Module7.symvers` files.
 
 If you're using `rpi-update`, the procedure is a bit different.  
