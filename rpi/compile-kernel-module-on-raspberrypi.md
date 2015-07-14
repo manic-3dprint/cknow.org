@@ -62,3 +62,16 @@ $ cp ../Module7.symvers Module.symvers  #for the Raspberry Pi 2
 If instead you're compiling for a Raspberry Pi 1 kernel, you need to do `cp ../Module.symvers Module.symvers`.  
 No matter for which version of the Raspberry Pi you'll compile a kernel module, the file needs to be named `Module.symvers` and needs to be in the root directory of the kernel sources.
 
+### Step 3: Set up your system for kernel module compilation
+
+When you're compiling a kernel module, the build system expects to find various files and directories in certain locations. Therefor, we'll need to set up links so those files and directories will be found.  
+For the following examples we assume that the user is 'pi' and that the previous `git clone` command was performed in it's home directory.  
+The first link we need to set up is between the kernel headers/source and the `/lib/modules/<current-kernel-version>/build` directory. the `<current-kernel-version>` can be obtained by the `uname -r` command and so the command to set up the link becomes:
+```
+# ln -s /home/pi/rpf-linux-kernel/ /lib/modules/$(uname -r)/build
+```
+The other link we need to set up is between the kernel source and the `/usr/src/linux-headers-<current-kernel-version>/` directory and the command to do that is:
+```
+# ln -s /home/diederik/rpf-linux-kernel/ /usr/src/linux-headers-$(uname -r)
+```
+And that's it, you're now ready to compile a kernel module for your current kernel!
