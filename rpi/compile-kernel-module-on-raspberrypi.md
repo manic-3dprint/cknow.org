@@ -1,6 +1,11 @@
 # Compiling a kernel module on the Raspberry Pi
 
-Here I'll describe the steps needed to download the right kernel sources and setup your Raspberry Pi so you can compile your own kernel module.
+Here I'll describe the steps needed to get the right kernel sources and setup your Raspberry Pi so you can compile your own kernel modules.
+In this article you'll find a number of commands and they are prefixed by '$' or '#'. You don't type those characters, but it's an indication as whom you need to execute it. The '$' character means to execute it as a normal user, while '#' means to execute it as root or with sudo.  
+No matter what part of this article is applicable to you, there are a number of programs you need to have installed. You get them through
+```
+# apt-get install build-essential
+```
 
 ## Compiling a module for the raspbian.org kernel
 
